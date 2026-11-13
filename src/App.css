@@ -2057,8 +2057,9 @@
    ADVANCED COPYRIGHT PROTECTION & ANTI-THEFT SHIELDS
    ========================================================================== */
 
-/* Universal Image Protection Lock */
-img {
+/* Universal Image & Video Protection Lock */
+img,
+video {
   -webkit-user-drag: none;
   -khtml-user-drag: none;
   -moz-user-drag: none;
@@ -2069,6 +2070,9 @@ img {
   -ms-user-select: none;
   user-select: none;
   -webkit-touch-callout: none;
+}
+
+img {
   pointer-events: none; /* Image context-menu interception shield */
 }
 

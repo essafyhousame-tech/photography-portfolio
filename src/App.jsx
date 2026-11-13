@@ -804,7 +804,7 @@ export default function App() {
                 {/* 3D Dynamic Specular Glare */}
                 <div className="featured-specular-glare" />
 
-                {/* Real Living Video Loop */}
+                {/* Real Living Video Loop with Anti-Theft & Download Shield */}
                 <video
                   ref={cinemaVideoRef}
                   src="/videos/skydiving-beni-mellal.mp4"
@@ -812,6 +812,9 @@ export default function App() {
                   loop
                   muted={isCinemaMuted}
                   playsInline
+                  controlsList="nodownload noplaybackrate noremoteplayback"
+                  disablePictureInPicture
+                  onContextMenu={(e) => e.preventDefault()}
                   className="cinema-living-video"
                   onClick={toggleCinemaPlay}
                 />
